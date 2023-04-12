@@ -17,6 +17,7 @@ defmodule ChangesetsWeb.Router do
   scope "/", ChangesetsWeb do
     pipe_through :browser
 
+    live "/user", Live.ProfileForm
     get "/", PageController, :home
   end
 
